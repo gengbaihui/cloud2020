@@ -8,7 +8,7 @@
     </resultMap>
     
     <insert id="create" parameterType="Payment" useGeneratedKeys="true" keyProperty="id">
-            insert into payment(serial) values(${serial});
+            insert into payment(id,serial) values(null,#{serial});
 
     </insert>
 
